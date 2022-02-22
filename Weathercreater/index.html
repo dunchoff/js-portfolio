@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <button onclick="add_element()">+</button>
+    <button onclick="rem_element()">-</button>
+    <div class="row">
+        <div class="circle"></div>
+    </div>
+    <h1>Forecast creator</h1>
+    <form action="">
+        <label for="weather">Choose a weather:</label>
+        <select name="weather" id="weather">
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+        </select>
+        <label for="temp">Choose a temperature:</label>
+        <input type="range" name="temp" id="temp" min="-40" max="40" value="0" step="5">
+        <input id="add_forecast" type="button" value="create" onclick="add_weather()">
+        <input type="button" value="delete" onclick="rem_weather()">
+    </form>
+    <div class="weather">
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
